@@ -22,7 +22,6 @@ A machine learning web application that predicts medical insurance costs based o
 - **Features**: Age, Sex, BMI, Children, Smoker Status, Region
 - **Target**: Medical Insurance Charges (log10 transformed)
 - **Framework**: scikit-learn
-- **Performance**: [Add your model metrics here]
 
 ### Input Features:
 - **Age**: 18-100 years
