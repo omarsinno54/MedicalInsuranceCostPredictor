@@ -171,6 +171,7 @@ Predict insurance cost for given parameters.
   "status": "success"
 }
 ```
+
 **Parameters:**
 - `age`: Integer (18-100)
 - `sex`: String ("male" or "female")  
@@ -178,7 +179,6 @@ Predict insurance cost for given parameters.
 - `children`: Integer (0-10)
 - `smoker`: String ("yes" or "no")
 - `region`: String ("northeast", "northwest", "southeast", "southwest")
-```
 
 ## 🐛 Troubleshooting
 
@@ -243,7 +243,6 @@ This project showcases:
 The neural network model was trained with the following preprocessing:
 - **Target transformation**: `log10(charges)` to handle right-skewed distribution
 - **Feature encoding**: Categorical variables encoded appropriately
-- **Validation**: [Add your validation approach]
 
 To retrain the model, feel free to explore the attached jupyter notebook `notebook.ipynb`, or write your own script!
 
