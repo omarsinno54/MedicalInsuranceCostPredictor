@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # Flask Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5010:5010"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./backend:/app
+    networks:
+      - insurance-network
+    restart: unless-stopped
+
+  # Frontend (Nginx)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - insurance-network
+    restart: unless-stopped
+
+networks:
+  insurance-network:
+    driver: bridge

@@ -1,0 +1,13 @@
+black
+black[jupyter]
+pylint
+ipython
+ipykernel
+matplotlib
+scikit-learn
+pandas
+seaborn
+statsmodels
+mlflow
+flask
+flask-cors
